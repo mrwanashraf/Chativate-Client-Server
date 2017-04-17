@@ -1,0 +1,384 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    -webkit-user-select: none;
+    font-size: 0; /* to avoid space between divs */
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+        background-color: #ffffff;
+        width: 0.8vw;
+        border-radius: 0.5vw;
+        opacity: .4;
+
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+        background:  rgba(51, 51, 51, 0.1);
+        border-radius:  0.5vw;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Comfortaa'), local('Comfortaa-Regular'), url(../fonts/Comfortaa-Regular.ttf) format('woff2');
+}
+
+p:hover {
+
+        cursor: default;
+
+}
+#main {
+
+      width: inherit;
+      height: inherit;
+      white-space: nowrap;
+      border-spacing: 0;
+}
+
+
+#left {
+
+      display: inline-table;
+      width: 20%;
+      height: inherit;
+      border-right: black solid 1px;
+      box-sizing: border-box;
+      border-color: rgba(51, 51, 51, 0.1);
+
+
+}
+
+#left-main {
+
+
+      width: 100%;
+      height: inherit;
+      position: relative; /* wrapper div realtive to not allow the #left-top content get out of div */
+}
+
+#left-top {
+          display: block;
+          width: 100%;
+          height: 40%;
+          border-bottom: black solid 1px;
+          box-sizing: border-box;
+          border-color: rgba(51, 51, 51, 0.1);
+          position: absolute; /* child div absolute to not allow the #left-top content get out of div */
+}
+
+#left-top img {
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 10vw;
+        cursor: pointer;
+
+}
+
+#left-top > p {
+
+
+
+        font-size: 4vw;
+        font-family: 'Comfortaa';
+        text-align: center;
+        padding-top: 22vh;
+
+
+}
+
+
+#left-bottom {
+            display: block;
+            width: 100%;
+            height: 60%;
+            margin-top: 40vh;
+            position: absolute;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+}
+
+.usericon {
+
+        padding-left: 1vw;
+        margin-right: 2vw;
+        vertical-align: middle;
+        cursor: pointer;
+}
+
+.circle {
+
+      border-radius: 50%;
+      width: 1vw;
+      height: 1vw;
+      margin-left: 2.5vw;
+      cursor: pointer;
+
+
+}
+
+
+
+.selected {
+
+
+        background-color: #008daf;
+
+}
+
+.online {
+
+        background-color: #78d0e8;
+
+}
+
+
+
+.offline {
+
+      background-color: #cccccc;
+
+}
+
+
+#left-bottom > p {
+
+        font-size: 1.5vw;
+        font-family: 'Comfortaa';
+        margin: 1vh 0 0 0;
+        line-height: 5vh;
+        cursor: pointer;
+}
+
+.selected-text {
+
+
+        color: #008daf;
+
+}
+
+.online-text {
+
+        color: #78d0e8;
+
+}
+
+
+.offline-text {
+
+      color: #cccccc;
+
+}
+
+
+
+#middle {
+
+      display: inline-table;
+      width: 60%;
+      height: inherit;
+      border-right: black solid 1px;
+      border-left: black solid 1px;
+      box-sizing: border-box;
+      border-color: rgba(51, 51, 51, 0.1);
+
+}
+
+
+#middle-main {
+
+
+      width: 100%;
+      height: inherit;
+      position: relative;
+
+}
+
+#middle-top {
+          display: block;
+          width: 100%;
+          height: 90%;
+          border-bottom: black solid 1px;
+          box-sizing: border-box;
+          border-color: rgba(51, 51, 51, 0.1);
+          position: absolute;
+          overflow-x: hidden;
+          overflow-y: auto;
+}
+
+#middle-top > p {
+
+        font-size: 2vw;
+        font-family: 'Comfortaa';
+        margin-left: 2vw;
+        line-height: 3vh;
+        text-align: left;
+        white-space: initial;
+        color: rgb(51,51,51);
+}
+
+#middle-top > .userchat {
+
+
+        color: #4cbbd6;
+
+}
+
+
+
+#middle-top > #typing {
+
+            color: #4cbbd6;
+            margin-left: 35%;
+            bottom: 0;
+            left: 0;
+            font-size: 1.5vw;
+            position: absolute;
+
+}
+
+#middle-bottom {
+
+            margin-top: 90vh;
+            display: block;
+            width: 100%;
+            height: 10%;
+            position: absolute;
+
+}
+
+
+
+*:focus {
+
+        outline: none;
+
+}
+
+
+#middle-bottom > form > #textBox {
+
+
+        width: 50vw;
+        height: 9vh;
+        text-align: center;
+        font-size: 2vw;
+        margin-left: 5%;
+        font-family: 'Comfortaa';
+        border: 0;
+
+}
+
+#middle-bottom > form > #send {
+
+      width: 3.5vw;
+      height: 3.5vw;
+      margin-left: 1.5vw;
+      position: absolute;
+      margin-top: 2vh;
+
+}
+
+::-webkit-input-placeholder {
+
+
+      color: rgba(51, 51, 51, 0.3);
+
+}
+
+
+::selection {
+
+    background-color: rgba(51, 51, 51, 0.7);;
+    color: white;
+
+}
+
+
+#right {
+
+      display: relative;
+      width: 20%;
+      height: inherit;
+      margin-left: 80%;
+      margin-top: -100vh;
+
+}
+
+#right > img {
+
+
+          position: absolute;
+          margin-left: 3vw;
+          margin-top: 2vh;
+          width: 15vw;
+          height: 22vh;
+
+
+}
+
+#right > p {
+
+      position: absolute;
+      padding-top: 20vh;
+      font-family: 'Comfortaa';
+      font-size: 2.5vw;
+      padding-left: 4.3vw;
+      color:  #008daf;
+}
+
+#right > canvas {
+
+
+        margin-top: 32vh;
+        margin-left: 48%;
+
+}
+
+#right > #info {
+
+      margin-top: 15vh;
+      margin-left: 0.5vw;
+}
+
+#right > #info > p {
+
+
+        line-height: 20%;
+        font-family: 'Comfortaa';
+        font-size: 2vw;
+        padding-left: 4.3vw;
+        color:  #008daf;
+        text-align: left;
+
+
+}
+
+.removeblock {
+
+      margin-top: 50vh;
+      margin-left: 2vw;
+
+}
+
+.remove {
+
+      float: left;
+
+}
+
+.block {
+        margin-right: 1vw;
+        float: right;
+}

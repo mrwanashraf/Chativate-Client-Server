@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+			<meta charset="utf-8">
+			<title>Chativate - Chat</title>
+			<meta name="description" content="Chat Application">
+			<meta name="author" content="Mrwan ashraf <mrwan.ashraf94@gmail.com>">
+			<link href="../css/chat.css" rel="stylesheet">
+	</head>
+	<body>
+        <div id="main">
+              <div id="left">
+                    <div id="left-main">
+                          <div id="left-top">
+
+                          <img id="me" src="../media/meicon.png" draggable="false">
+                                                <p>Me</p>
+
+                          </div>
+
+                          <div id="left-bottom">
+
+                          </div>
+                    </div>
+              </div>
+
+              <div id="middle">
+                      <div id="middle-main">
+                            <div id="middle-top">
+
+                            </div>
+
+                            <div id="middle-bottom">
+
+                                    <form id="form">
+                                            <input id="textBox" type="text" placeholder="type your message">
+                                            <input id="send" type="image" src="../media/send.png" draggable="false">
+                                    </form>
+
+                            </div>
+                      </div>
+              </div>
+
+              <div id="right">
+
+              </div>
+        </div>
+        <script src="../bower_components/socket.io-client/dist/socket.io.js"></script>
+        <script type="text/javascript" src="../front/chat.js"></script>
+	</body>
+</html>

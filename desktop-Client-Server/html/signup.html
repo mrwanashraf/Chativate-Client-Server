@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+			<meta charset="utf-8">
+			<title>Chativate - Sign up</title>
+			<meta name="description" content="Chat Application">
+			<meta name="author" content="Mrwan ashraf <mrwan.ashraf94@gmail.com>">
+			<link href="../css/signup.css" rel="stylesheet">
+	</head>
+	<body>
+		<div>
+					<img src="../media/logo2.png" draggable="false">
+		</div>
+    <div id="form">
+          <form action="https://127.0.0.1:8443/signup" method="post"> <!--enctype="application/x-www-form-urlencoded"-->
+              <input id="username" class="textBox" type="text" placeholder="username"> <!-- name="user[username]" -->
+              <input id="password" class="textBox" type="password" placeholder="password"> <!--  name="user[password]" -->
+                <input id="confirmPassword" class="textBox" type="password" placeholder="confirm password"> <!-- name="user[confirmPassword]"-->
+              <input id="submit" type="button" value="Sign up"  > <!-- formaction="signin.html" -->
+                <a id="lt" href="signin.html" draggable="false">&lt;</a>
+          </form>
+    </div>
+    <script type="text/javascript" src="../front/signup.js"></script>
+	</body>
+</html>

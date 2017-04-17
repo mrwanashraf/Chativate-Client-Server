@@ -1,0 +1,127 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+        background-color: #ffffff;
+        width: 0.8vw;
+        border-radius: 0.5vw;
+        opacity: .4;
+
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+        background:  rgba(51, 51, 51, 0.1);
+        border-radius:  0.5vw;
+}
+
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Comfortaa'), local('Comfortaa-Regular'), url(../fonts/Comfortaa-Regular.ttf) format('woff2');
+}
+
+::selection {
+
+    background-color: #4cbbd6;
+    color: white;
+
+}
+
+div {
+
+        -webkit-user-select: none;
+
+}
+
+img {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 12%;
+        -webkit-user-select: none;
+
+
+}
+
+form {
+
+        margin-top: 6%;
+
+}
+
+#form {
+
+
+        text-align: center;
+
+}
+
+input {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+        height: 5vh;
+        font-size: 2vw;
+        font-family: 'Comfortaa';
+        text-align: center;
+        color: rgb(51,51,51);
+
+}
+
+.textBox {
+
+          border: 1px solid rgba(51,51,51,0.1);
+          margin-top: 2%;
+}
+
+#submit {
+
+      color: white;
+      background-color: #4cbbd6;
+      width: 80.2%;
+      border: 0;
+      margin-top: 4%;
+      margin-bottom: 1%;
+      height: 6vh;
+}
+
+#submit:active {
+
+    background-color: rgba(76, 187, 214, 0.5);
+
+}
+
+
+
+*:focus {
+
+        outline: none;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: #4cbbd6;
+    font-size: 2vw;
+    font-family: 'Comfortaa';
+}
+
+a:active {
+
+        color: rgba(76, 187, 214, 0.5);
+
+}

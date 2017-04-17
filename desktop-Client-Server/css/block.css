@@ -1,0 +1,178 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+
+}
+
+
+::-webkit-scrollbar {
+        background-color: #ffffff;
+        width: 0.8vw;
+        border-radius: 0.5vw;
+        opacity: .4;
+
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+        background:  rgba(51, 51, 51, 0.1);
+        border-radius:  0.5vw;
+}
+
+
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Comfortaa'), local('Comfortaa-Regular'), url(../fonts/Comfortaa-Regular.ttf) format('woff2');
+}
+
+::selection {
+
+    background-color: #4cbbd6;
+    color: white;
+
+}
+
+div {
+
+        -webkit-user-select: none;
+
+}
+
+#logo {
+
+        padding-top: 5%;
+
+}
+
+img {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+        -webkit-user-select: none;
+
+
+
+}
+
+p {
+
+     margin-top: 2vh;
+     text-align: center;
+     font-family: 'Comfortaa';
+     color: rgb(51,51,51);
+     font-size: 5vh;
+
+}
+
+form {
+
+        margin-top: -6%;
+
+}
+
+#form {
+
+
+        text-align: center;
+
+}
+
+#stylist {
+
+
+      width: 80vw;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+}
+
+#stylist ul {
+
+
+
+            list-style-type: none;
+
+            margin-right: 6vw;
+
+}
+
+#stylist li {
+
+
+
+
+}
+
+.usericon {
+
+        padding-left: 1vw;
+        margin-right: 2vw;
+        vertical-align: middle;
+        display: inline-block;
+        margin-bottom: -3vh;
+
+}
+
+#stylist  p {
+
+      display: inline;
+      font-family: 'Comfortaa';
+      color: #78d0e8;
+      font-size: 1.5vw;
+      vertical-align: bottom;
+
+
+
+}
+
+
+#stylist  p  img {
+
+    display: inline;
+    vertical-align: middle;
+
+}
+
+
+.unblock {
+
+      cursor: pointer;
+      margin-left: 2vw;
+      vertical-align: middle;
+      padding-top: 5vh;
+
+}
+
+
+
+*:focus {
+
+        outline: none;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: #4cbbd6;
+    font-size: 2vw;
+    font-family: 'Comfortaa';
+    margin-left: -2vw;
+}
+
+a:active {
+
+        color: rgba(76, 187, 214, 0.5);
+
+}

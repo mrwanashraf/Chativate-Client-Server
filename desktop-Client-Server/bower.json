@@ -1,0 +1,24 @@
+{
+  "name": "Chativate",
+  "description": "chat app",
+  "main": "index.html",
+  "authors": [
+    "Mrwan Ashraf <mrwan.ashraf94@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chat"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "socket.io-client": "^1.7.2"
+  }
+}
